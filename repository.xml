@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[st63jun]]></name>
+    <description lang="en"><![CDATA[Personal User Overlay]]></description>
+    <homepage>http://github.com/st63jun/st63jun-overlay</homepage>
+    <owner type="person">
+      <email>st63jun@xopowo.info</email>
+      <name><![CDATA[Jun SAITO]]></name>
+    </owner>
+    <source type="git">git://github.com/st63jun/st63jun-overlay.git</source>
+    <feed>http://github.com/st63jun/st63jun-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
