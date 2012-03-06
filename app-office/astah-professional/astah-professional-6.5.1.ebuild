@@ -33,7 +33,7 @@ src_install() {
 
 	echo "#!/bin/sh" > astah
 	echo "ASTAH_HOME=/opt/${PN}" >> astah
-	echo "ASTAH_JAR=astah-professional.jar" >> astah
+	echo "ASTAH_JAR=astah-pro.jar" >> astah
 	echo "CLASSPATH=\$ASTAH_HOME/\$ASTAH_JAR" >> astah
 	echo "JAVA_OPTS='-Xms16m -Xmx512m -Xss2m'" >> astah
 	echo "java \$JAVA_OPTS -jar \$ASTAH_HOME/\$ASTAH_JAR \$1 \$2 \$3" >> astah
