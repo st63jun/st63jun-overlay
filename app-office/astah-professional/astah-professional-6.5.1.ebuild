@@ -22,17 +22,17 @@ pkg_nofetch() {
 }
 
 src_install() {
-	dodir /opt/${PN}
+	dodir /opt/${P}
 
 	cd $S
 
 	dodoc *.txt *.html
 	rm *.txt *.html astah
-	cp -rdp * ${D}/opt/${PN}
-	exeinto /opt/${PN}
+	cp -rdp * ${D}/opt/${P}
+	exeinto /opt/${P}
 
 	echo "#!/bin/sh" > astah
-	echo "ASTAH_HOME=/opt/${PN}" >> astah
+	echo "ASTAH_HOME=/opt/${P}" >> astah
 	echo "ASTAH_JAR=astah-pro.jar" >> astah
 	echo "CLASSPATH=\$ASTAH_HOME/\$ASTAH_JAR" >> astah
 	echo "JAVA_OPTS='-Xms16m -Xmx512m -Xss2m'" >> astah
@@ -41,7 +41,7 @@ src_install() {
 
 	dodir /opt/bin
 	insinto /opt/bin
-	dosym /opt/${PN}/astah /opt/bin/astah-pro
+	dosym /opt/${P}/astah /opt/bin/astah-pro
 }
 
 pkg_postinst() {
