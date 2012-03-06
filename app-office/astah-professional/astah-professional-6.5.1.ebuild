@@ -41,7 +41,7 @@ src_install() {
 
 	dodir /opt/bin
 	insinto /opt/bin
-	dosym /opt/${PN}/astah /opt/bin/astah
+	dosym /opt/${PN}/astah /opt/bin/astah-pro
 }
 
 pkg_postinst() {
