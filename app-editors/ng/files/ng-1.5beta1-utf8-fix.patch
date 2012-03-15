@@ -1,3 +1,27 @@
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..72bc283
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,18 @@
++*~
++*.o
++ng
++Makefile
++canna.c
++chrdef.h
++cinfo.c
++config.cache
++config.log
++config.status
++fileio.c
++spawn.c
++sysconfig.h
++sysdef.h
++tty.c
++ttydef.h
++ttyio.c
++ttykbd.c
 diff --git a/JIS2UCS.i b/JIS2UCS.i
 new file mode 100644
 index 0000000..0eb75b8
@@ -8202,6 +8226,17 @@ index 0000000..0eb75b8
 +  0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff,
 +  0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff,
 +};
+diff --git a/README b/README
+new file mode 100644
+index 0000000..315db0d
+--- /dev/null
++++ b/README
+@@ -0,0 +1,5 @@
++ng-hack
++=======
++hidev氏のUTF-8対応パッチを使用しています．
++http://hidev.blog.so-net.ne.jp/2007-03-09
++
 diff --git a/UCS2JIS.i b/UCS2JIS.i
 new file mode 100644
 index 0000000..3472b17
@@ -16406,6 +16441,19 @@ index 0000000..3472b17
 +  0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff,
 +  0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff, 0xfeff,
 +};
+diff --git a/config.h b/config.h
+index 60e4200..fc458b1 100644
+--- a/config.h
++++ b/config.h
+@@ -68,7 +68,7 @@
+ 
+ #define	MINIBUF_EDIT	/* minibuffer edit like GNU emacs (by Kakugawa)	*/
+ 
+-#define	NEXTLINE 1	/* next-line-add-newlines (by S.Yoshida) */
++#define	NEXTLINE 0	/* next-line-add-newlines (by S.Yoshida) */
+ 
+ #define EMACS_QUERY_KEYS /* isearch/query-replace key bindings compatible */
+ 			/* with GNU Emacs 19 and later (by Shimbo)*/
 diff --git a/def.h b/def.h
 index 4e153f4..8c9cecb 100644
 --- a/def.h
